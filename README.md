@@ -47,12 +47,3 @@ HF_TOKEN=hf_your_read_token
 
 Never commit or share `.env`.
 
-## Train the lightweight Telugu handwriting model
-
-This is a separate custom CNN+BiLSTM+CTC model. It is not the Bodhan checkpoint and can be fine-tuned on any Telugu image-label CSV manifest plus corrected handwriting labels.
-
-Smoke test on 200 samples:
-
-```powershell
-python src\train_crnn.py --manifest path\to\labels.csv --limit 200 --epochs 2 --output models\telugu_crnn.pt
-```

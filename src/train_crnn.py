@@ -49,7 +49,7 @@ class TeluguCRNN(nn.Module):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--manifest", default="data/iiit_hw_telugu_train.csv")
+    ap.add_argument("--manifest", required=True, help="Path to a CSV manifest with image and text columns")
     ap.add_argument("--output", default="models/telugu_crnn.pt")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--epochs", type=int, default=10)

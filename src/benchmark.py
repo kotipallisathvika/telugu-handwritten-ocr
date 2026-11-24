@@ -18,7 +18,7 @@ def edit_distance(a, b):
 
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--manifest", default="data/iiit_hw_telugu_train.csv")
+ap.add_argument("--manifest", required=True, help="Path to a CSV manifest with image and text columns")
 ap.add_argument("--limit", type=int, default=5)
 ap.add_argument("--output", default="outputs/bodhan_benchmark.json")
 args = ap.parse_args()

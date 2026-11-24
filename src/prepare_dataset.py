@@ -3,9 +3,9 @@ import csv
 from pathlib import Path
 
 
-ap = argparse.ArgumentParser(description="Convert IIIT Telugu OCR labels to a project manifest")
-ap.add_argument("--root", default="data/iiit_hw_telugu/train")
-ap.add_argument("--output", default="data/iiit_hw_telugu_train.csv")
+ap = argparse.ArgumentParser(description="Convert Telugu OCR labels to a project manifest")
+ap.add_argument("--root", required=True, help="Dataset training directory")
+ap.add_argument("--output", required=True, help="Output CSV manifest path")
 args = ap.parse_args()
 root = Path(args.root)
 label_file = root / "train_gt.txt"

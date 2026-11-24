@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=5.7
+huggingface_hub>=1.31.0
+pillow>=10.0
+PyMuPDF>=1.24
+opencv-python>=4.10
+streamlit>=1.40
+sentencepiece>=0.2.0
+python-dotenv>=1.0.0

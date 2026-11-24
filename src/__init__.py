@@ -1,0 +1,1 @@
+"""Local Telugu OCR utilities."""

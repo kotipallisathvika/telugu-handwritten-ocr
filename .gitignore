@@ -1,0 +1,8 @@
+.venv/
+.venv_translate/
+__pycache__/
+outputs/
+*.pyc
+.env
+models/
+data/

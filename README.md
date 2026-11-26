@@ -39,6 +39,18 @@ editable Telugu text, TXT/JSON/CSV downloads, and local Telugu-to-English
 translation. Translation runs in the separate `.venv_translate` environment so
 its Transformers version does not conflict with Bodhan OCR.
 
+## OCR metrics
+
+Put test images in a folder and create a ground-truth JSON file by copying
+`data/ground_truth.example.json`. Then run:
+
+```powershell
+python src\metrics.py --images path\to\test_images --truth data\ground_truth.json --output metrics.json
+```
+
+The report includes Character Error Rate (CER), Word Error Rate (WER), exact
+match accuracy, and average processing time.
+
 For Hugging Face model access, create a local `.env` file from `.env.example`:
 
 ```env

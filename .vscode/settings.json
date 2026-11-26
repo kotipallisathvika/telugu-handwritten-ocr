@@ -1,3 +1,7 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv_translate\\Scripts\\python.exe"
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv_translate\\Scripts\\python.exe",
+  "git.decorations.enabled": false,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnnecessaryCast": "none"
+  }
 }

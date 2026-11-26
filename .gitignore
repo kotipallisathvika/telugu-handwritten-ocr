@@ -5,4 +5,9 @@ outputs/
 *.pyc
 .env
 models/
-data/
+data/*
+!data/
+!data/ground_truth.example.json
+data/test_images/
+data/*_draft*.json
+data/metrics*.json
